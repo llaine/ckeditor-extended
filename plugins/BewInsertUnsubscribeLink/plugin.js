@@ -29,14 +29,10 @@ CKEDITOR.plugins.add( 'BewInsertUnsubscribeLink',
                     if (selectedText.length < 3) {
                         alert('Le lien doit faire plus de 3 caractères.');
                         return;
+                    } else {
+                      editor.insertHtml('<a href="Bob" rel="unsubscribe">' + selectedText + '</a>');
                     }
 
-                    existingLink = selectedNode.parentNode.href;
-
-                    if (existingLink){ // En fait on se fout de savoir si il y avait un lien, on met le notre
-                        // selectedText.URL(Bob);
-                    }
-                    editor.insertHtml('<a href="Bob" rel="unsubscribe">' + selectedText + '</a>');
                 } else {
                   var lien = prompt('Entrez le lien de désinscription');
 

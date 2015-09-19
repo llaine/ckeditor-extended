@@ -4,6 +4,7 @@
  */
 
 CKEDITOR.editorConfig = function(config) {
+
 	config.toolbarGroups = [
 		{ name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ] },
 		{ name: 'clipboard', groups: [ 'clipboard', 'undo' ] },
@@ -20,8 +21,9 @@ CKEDITOR.editorConfig = function(config) {
 		{ name: 'about', groups: [ 'about' ] }
 	];
 
-	config.extraPlugins = 'BewInsertUnsubscribeLink';
 	config.removeButtons = 'Underline,Subscript,Superscript,Anchor,Image,Table,HorizontalRule,Source,Maximize,Styles,About';
-	config.language = 'fr'
-	config.allowedContent = true;
+	config.language = 'fr';
+
+	config.extraPlugins = 'BewInsertUnsubscribeLink';
+	console.log(config)
 };
