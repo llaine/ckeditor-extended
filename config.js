@@ -25,5 +25,4 @@ CKEDITOR.editorConfig = function(config) {
 	config.language = 'fr';
 
 	config.extraPlugins = 'BewInsertUnsubscribeLink';
-	console.log(config)
 };
